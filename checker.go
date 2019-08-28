@@ -20,8 +20,8 @@ type checker struct {
 	ready   bool
 }
 
-//NewChecker returns a concrete implementation of the checker
-func NewChecker() Checker {
+//New returns a concrete implementation of the checker
+func New() Checker {
 	return &checker{false, false}
 }
 
